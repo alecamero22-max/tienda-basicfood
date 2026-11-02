@@ -25,6 +25,7 @@ public class Main {
 
             switch (opcion) {
                 case 1:
+                    /*productoController.*/
                     System.out.println("Mostrando el catálogo: 1. Pizza, 2. Hamburguesa, 3. Pasta, 4. Sushi.");
                     break;
                 case 2:
