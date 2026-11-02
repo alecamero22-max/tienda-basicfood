@@ -1,4 +1,4 @@
-package com.basicfood.Controller;
+package com.basicfood.controller;
 
 public class Usuario {
 	
