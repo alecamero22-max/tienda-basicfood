@@ -2,8 +2,14 @@ package com.basicfood;
 
 import java.util.Scanner;
 
+import com.basicfood.controller.ProductoController;
+
 public class Main {
     public static void main(String[] args) {
+
+        ProductoController productoController = new ProductoController();
+
+
         Scanner sc = new Scanner(System.in);
         int opcion = 0;
 

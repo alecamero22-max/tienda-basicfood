@@ -1,5 +1,5 @@
 package com.basicfood.controller;
 
-public class Usuario {
+public class ProductoController {
 	
 }
