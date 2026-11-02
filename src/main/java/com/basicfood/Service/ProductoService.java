@@ -8,12 +8,13 @@ public class ProductoService {
 
     public ProductoService() {
         Producto p1 = new Producto("pizza", 2.48);
+		// Agrega más productos según sea necesario
+		
     }
 
 
 
 	public String mostrarCatalogo(){
-		
 		return null;
 	}
 }
