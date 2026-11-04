@@ -2,13 +2,14 @@ package com.basicfood;
 
 import java.util.Scanner;
 
+import com.basicfood.controller.CarritoController;
 import com.basicfood.controller.ProductoController;
 
 public class Main {
     public static void main(String[] args) {
 
         ProductoController productoController = new ProductoController();
-
+        CarritoController carritoController = new CarritoController();
 
         Scanner sc = new Scanner(System.in);
         int opcion = 0;
@@ -25,8 +26,7 @@ public class Main {
 
             switch (opcion) {
                 case 1:
-                    /*productoController.*/
-                    System.out.println("Mostrando el catálogo: 1. Pizza, 2. Hamburguesa, 3. Pasta, 4. Sushi.");
+                    System.out.println(productoController.mostrarCatalogo());
                     break;
                 case 2:
                     System.out.println("Producto añadido al carrito correctamente.");

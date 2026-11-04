@@ -9,8 +9,10 @@ public class ProductoController {
         this.service = new ProductoService();
     }
 
-	public String mostrarCatalogo(){
-		return null;
-	}
+	public String mostrarCatalogo() {
+
+        return this.service.mostrarCatalogo();
+    }
+
 
 }
