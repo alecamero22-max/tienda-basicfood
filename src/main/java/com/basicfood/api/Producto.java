@@ -1,8 +1,8 @@
 package com.basicfood.api;
 
 public class Producto {
-	private String nombre;
-	private double precio;
+    private String nombre;
+    private double precio;
 
     public Producto(String nombre, double precio) {
         this.nombre = nombre;
@@ -24,6 +24,4 @@ public class Producto {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
-
-
 }

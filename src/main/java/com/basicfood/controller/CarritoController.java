@@ -6,13 +6,11 @@ import com.basicfood.service.CarritoService;
 public class CarritoController {
     private CarritoService service;
 
-    public CarritoController(){
+    public CarritoController() {
         this.service = new CarritoService();
     }
 
-
-
-    public boolean addProduct(){
-        return this.service.addProduct();
+    public boolean addProduct(Producto producto) {
+        return this.service.addProduct(producto);
     }
 }

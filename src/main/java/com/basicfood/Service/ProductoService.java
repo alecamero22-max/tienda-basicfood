@@ -19,10 +19,18 @@ public class ProductoService {
 
     public String mostrarCatalogo() {
         String productos = "";
-       for(Producto producto: listaProductos){
-           productos +=  producto.getNombre() + " - " + producto.getPrecio() + "€\n";
-       }
-       return productos;
+        for (Producto producto : listaProductos) {
+            productos += producto.getNombre() + " - " + producto.getPrecio() + "€\n";
+        }
+        return productos;
     }
 
+    public Producto buscarProducto(String nombre) {
+        for (Producto producto : listaProductos) {
+            if (producto.getNombre().equals(nombre)) {
+                return producto;
+            }
+        }
+        return null;
+    }
 }

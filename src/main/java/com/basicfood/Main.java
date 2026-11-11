@@ -2,6 +2,7 @@ package com.basicfood;
 
 import java.util.Scanner;
 
+import com.basicfood.api.Producto;
 import com.basicfood.controller.CarritoController;
 import com.basicfood.controller.ProductoController;
 
@@ -23,13 +24,28 @@ public class Main {
             System.out.print("Elige una opción (1-4): ");
 
             opcion = sc.nextInt();
+            sc.nextLine();
 
             switch (opcion) {
                 case 1:
                     System.out.println(productoController.mostrarCatalogo());
                     break;
                 case 2:
-                    System.out.println("Producto añadido al carrito correctamente.");
+                    System.out.print("Introduce el nombre del producto: ");
+                    String nombre = sc.nextLine();
+
+                    Producto productoEncontrado = productoController.buscarProducto(nombre);
+
+                    if (productoEncontrado != null) {
+                        boolean anadido = carritoController.addProduct(productoEncontrado);
+                        if (anadido) {
+                            System.out.println("Producto añadido al carrito correctamente.");
+                        } else {
+                            System.out.println("No se pudo añadir: el carrito está lleno.");
+                        }
+                    } else {
+                        System.out.println("Error: El producto '" + nombre + "' no existe en el catálogo.");
+                    }
                     break;
                 case 3:
                     System.out.println("Revisando tu carrito: Tienes productos listos para pedir.");
