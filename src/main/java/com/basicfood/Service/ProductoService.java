@@ -15,6 +15,8 @@ public class ProductoService {
         listaProductos.add(p1);
         listaProductos.add(p2);
         listaProductos.add(p3);
+		// Agrega más productos según sea necesario
+		
     }
 
     public String mostrarCatalogo() {
@@ -34,3 +36,5 @@ public class ProductoService {
         return null;
     }
 }
+
+
