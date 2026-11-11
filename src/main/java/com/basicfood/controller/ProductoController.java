@@ -1,5 +1,7 @@
 package com.basicfood.controller;
 
+import java.util.List;
+
 import com.basicfood.api.Producto;
 import com.basicfood.service.ProductoService;
 
@@ -8,6 +10,10 @@ public class ProductoController {
 
     public ProductoController() {
         this.service = new ProductoService();
+    }
+
+    public List<Producto> getProductos() {
+        return this.service.getProductos();
     }
 
     public String mostrarCatalogo() {
