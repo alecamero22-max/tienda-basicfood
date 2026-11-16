@@ -1,5 +1,7 @@
 package com.basicfood.api;
 
+import com.basicfood.entity.Producto;
+
 import java.util.ArrayList;
 import java.util.List;
 

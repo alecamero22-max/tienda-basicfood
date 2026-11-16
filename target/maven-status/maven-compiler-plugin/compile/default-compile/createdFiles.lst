@@ -1,0 +1,6 @@
+com\basicfood\controller\CarritoController.class
+com\basicfood\controller\ProductoController.class
+com\basicfood\service\ProductoService.class
+com\basicfood\api\Carrito.class
+com\basicfood\service\CarritoService.class
+com\basicfood\Main.class

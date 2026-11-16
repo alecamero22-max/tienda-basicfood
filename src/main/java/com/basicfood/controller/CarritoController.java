@@ -1,6 +1,6 @@
 package com.basicfood.controller;
 
-import com.basicfood.api.Producto;
+import com.basicfood.entity.Producto;
 import com.basicfood.service.CarritoService;
 
 public class CarritoController {
